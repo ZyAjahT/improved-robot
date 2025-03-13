@@ -1,0 +1,23 @@
+{
+  "name": "improved-robot",
+  "version": "1.0.0",
+  "description": "node js example app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZyAjahT/improved-robot.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ZyAjahT/improved-robot/issues"
+  },
+  "homepage": "https://github.com/ZyAjahT/improved-robot#readme",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^4.21.2"
+  }
+}
