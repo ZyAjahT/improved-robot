@@ -19,6 +19,17 @@ app.post('/add', function(req, res){
     res.redirect('/'); 
 })
 
+app.post('/done',function(req, res){
+    if(typeof req.body.task === 'string'){
+        tasks = tasks.filter(item => item !== req.body.task);
+    }else if(Array.isArray(req.body.task)){
+        tasks = tasks.filter(item => req.body.task.indexOf(item) === -1);
+    }else{
+        console.warn(`Data type is not correct received type ${typeof req.body.task}. 'Please check inputs args: `, req.body.task);
+    }
+    res.redirect('/');
+})
+
 app.listen(3000, function(){
     console.log('Our app is running on port 3000');
 })
